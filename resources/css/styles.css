@@ -17,8 +17,18 @@ body {
 .row {
   max-width: 1140px;
   text-align: center;
+  margin: 0 auto;
 }
 
+section {
+  padding: 80px 0;
+}
+
+.box {
+  padding: 1%;
+}
+
+/* ----Header---- */
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(img/top.jpg);
   background-size: cover;
@@ -27,29 +37,8 @@ header {
 }
 
 .text-box {
-  position: fixed;
-  width: 1140px;
-  top: 30%;
-  left: 80%;
-  transform: translate(-50%, -50%);
-}
-
-.main-nav {
+  margin-top: 80px;
   float: right;
-  list-style: none;
-  margin-top: 25px;
-}
-
-.main-nav li {
-  display: inline-block;
-  margin-left: 40px;
-}
-
-.main-nav li a {
-  color: white;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 90%;
 }
 
 h1 {
@@ -63,6 +52,107 @@ h1 {
   word-spacing: 3px
 }
 
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #e67e22;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+/* ----Paragraphs---- */
+.long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.box p {
+  font-size: 90%;
+  line-height: 145%;
+}
+
+/* ----Icons---- */
+.box ion-icon {
+  font-size: 350%;
+  display: block;
+  color: #e67e22;
+  margin-bottom: 10px;
+  margin-left: 34%;
+
+}
+
+/* ----Navigation Bar---- */
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 25px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #e67e22;
+}
+
+/* ----Photos---- */
+.about-showcase {
+  list-style: none;
+  width: 100%;
+}
+
+.about-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+
+.about-photo {
+  width: 100%;
+  margin: 0;
+}
+
+.about-photo img {
+  width: 100%;
+  height: auto;
+}
+
+/* ----Buttons---- */
 .btn:link,
 .btn:visited {
   display: inline-block;
